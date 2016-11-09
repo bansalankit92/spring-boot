@@ -9,7 +9,6 @@ See here for more informations:
 
 - Java 8
 - Maven > 3.0
-- Rest Client Postman/ARC : https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en
 
 #### From terminal
 
@@ -27,13 +26,13 @@ Import as *Existing Maven Project* and run it as *Spring Boot App*.
 - Run the application and go on http://localhost:8080/
 - Use the following urls to invoke controllers methods and see the interactions
   with the Note List:
-  As we are not using DB the data will be stored in the Memory so each time you run/restart the server, You will need to add the values again.
-  Use Rest Client like Postman or ARC to run the links.
+  As we are not using DB the data will be stored in the Memory so each time you run/restart the server , You will need to add values again.
   Body content-type: `application/x-www-form-urlencoded`
+  All this method return ModelAndView i.e. GUI of the application
     * POST `/notes`: Body `note=note value` create a new note with an auto-generated id and time and note as passed values.
-    * DELETE `/notes/{id}`: delete the note with the passed id in url .
-    * GET `/notes/{id}`: retrieve note by passing the note id.
+    * GET `/notes/delete?id=1`: delete the note with the passed id in url .
+    * GET `/notes/id?id=1`: retrieve note by passing the note id.
     * GET `/notes`: Get all notes as list.
-    * PUT `/notes/{id}`: Body `note=updated value` To update the note 
+    * POST `/notes/update?id=1`: Body `note=updated value` To update the note 
 
-Run the application and go on `http://localhost:8080/notes` to see the note list
+Run the application and go on `http://localhost:8080/notes` to see the note with UI 
