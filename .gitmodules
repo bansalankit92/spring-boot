@@ -1,0 +1,6 @@
+[submodule "1-note-app-basic"]
+	path = 1-note-app-basic
+	url = https://github.com/bansalankit92/1-note-app-basic
+[submodule "2-note-app-basic-ui-jsp"]
+	path = 2-note-app-basic-ui-jsp
+	url = https://github.com/bansalankit92/2-note-app-basic-ui-jsp
